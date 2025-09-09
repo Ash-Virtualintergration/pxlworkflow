@@ -24,17 +24,30 @@ export const DashboardHeader = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <Button variant="workflow" size="sm">
+          <Button 
+            variant="workflow" 
+            size="sm"
+            onClick={() => alert('New Task functionality coming soon!')}
+          >
             <Plus className="h-4 w-4" />
             New Task
           </Button>
           
-          <Button variant="ghost" size="icon" className="relative">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="relative"
+            onClick={() => alert('Notifications feature coming soon!')}
+          >
             <Bell className="h-4 w-4" />
             <span className="absolute -top-1 -right-1 h-2 w-2 bg-primary rounded-full"></span>
           </Button>
           
-          <Button variant="ghost" size="icon">
+          <Button 
+            variant="ghost" 
+            size="icon"
+            onClick={() => alert('Login/Profile functionality coming soon!')}
+          >
             <User className="h-4 w-4" />
           </Button>
         </div>

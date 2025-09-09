@@ -77,10 +77,18 @@ const Index = () => {
             Streamline your team's productivity with our modern workflow management platform
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
+            <Button 
+              variant="hero" 
+              size="lg"
+              onClick={() => alert('Getting Started guide coming soon!')}
+            >
               Get Started
             </Button>
-            <Button variant="glass" size="lg">
+            <Button 
+              variant="glass" 
+              size="lg"
+              onClick={() => alert('Demo feature coming soon!')}
+            >
               Watch Demo
             </Button>
           </div>
@@ -129,11 +137,19 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
             <h2 className="text-2xl font-bold text-foreground mb-4 sm:mb-0">Recent Tasks</h2>
             <div className="flex gap-3">
-              <Button variant="outline" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => alert('Filter functionality coming soon!')}
+              >
                 <Filter className="h-4 w-4" />
                 Filter
               </Button>
-              <Button variant="outline" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => alert('Date filter coming soon!')}
+              >
                 <Calendar className="h-4 w-4" />
                 Due Date
               </Button>
@@ -152,7 +168,11 @@ const Index = () => {
           <div className="text-center">
             <h3 className="text-xl font-semibold text-foreground mb-4">Ready to boost your productivity?</h3>
             <p className="text-muted-foreground mb-6">Create your first project and start managing tasks efficiently</p>
-            <Button variant="workflow" size="lg">
+            <Button 
+              variant="workflow" 
+              size="lg"
+              onClick={() => alert('Project creation coming soon!')}
+            >
               Create New Project
             </Button>
           </div>
