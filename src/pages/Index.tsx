@@ -3,6 +3,7 @@ import { TaskCard } from '@/components/TaskCard';
 import { StatCard } from '@/components/StatCard';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Clock, Users, TrendingUp, Calendar, Filter } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import heroWorkspace from '@/assets/hero-workspace.jpg';
 
 const mockTasks = [
@@ -57,6 +58,21 @@ const mockTasks = [
 ];
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/projects');
+  };
+
+  const handleWatchDemo = () => {
+    // TODO: Implement demo functionality
+    console.log('Demo clicked');
+  };
+
+  const handleCreateProject = () => {
+    navigate('/projects');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <DashboardHeader />
@@ -80,14 +96,14 @@ const Index = () => {
             <Button 
               variant="hero" 
               size="lg"
-              onClick={() => alert('Getting Started guide coming soon!')}
+              onClick={handleGetStarted}
             >
               Get Started
             </Button>
             <Button 
               variant="glass" 
               size="lg"
-              onClick={() => alert('Demo feature coming soon!')}
+              onClick={handleWatchDemo}
             >
               Watch Demo
             </Button>
@@ -171,7 +187,7 @@ const Index = () => {
             <Button 
               variant="workflow" 
               size="lg"
-              onClick={() => alert('Project creation coming soon!')}
+              onClick={handleCreateProject}
             >
               Create New Project
             </Button>
